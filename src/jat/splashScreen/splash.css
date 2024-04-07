@@ -1,0 +1,15 @@
+#splash{
+    -fx-background-image: url("message.jpg");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 250 250;
+    -fx-background-position: center center;
+}
+
+.progress-bar > .bar {
+	-fx-background-color: #237DEA;
+}
+
+#progressbox  {
+	-fx-alignment: center;
+}

@@ -1,0 +1,284 @@
+.root {
+	-fx-background-color: white;
+}
+
+#errorLabel {
+	-fx-font-size: 10.0px;
+  -fx-text-fill: red;
+}
+
+.label {
+  -fx-font-size: 16.0px;
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: black;
+}
+
+.button {
+	-fx-background-color: #237DEA;
+  -fx-font-size: 16.0px;
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: white;
+  -fx-background-radius: 30.0px;
+  -fx-min-width: 150.0;
+	-fx-min-height: 35.0;
+}
+
+.button:pressed {
+	-fx-background-color: derive(#237DEA, -35%);
+}
+
+.button:hover {
+	-fx-effect: dropshadow(gaussian, black, 10.0, 0.1, 0.0, 0.0);
+}
+
+.radio-button {
+	-fx-font-size: 16.0px;
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: black;
+}
+
+.text-field {
+	-fx-background-color: #d9d9d9;
+  -fx-font-size: 16.0px;
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: black;
+  -fx-background-radius: 30.0px;
+  -fx-min-width: 150.0;
+	-fx-min-height: 35.0;
+  -fx-highlight-fill: #237DEA;
+}
+.text-field:focused {
+	-fx-border-color: black;
+	-fx-border-width: 0.7;
+	-fx-border-radius: 30.0px;
+}
+
+.dialog-pane {
+	-fx-background-color: white;
+}
+
+.dialog-pane .button {
+	-fx-font-size: 13px;
+	fx-min-width: 135.0;
+	-fx-min-height: 35.0;
+}
+
+.dialog-pane .text-field {
+	 -fx-max-width: 140.0;
+	-fx-max-height: 35.0;
+}
+
+.dialog-pane #grid-pane  {
+	-fx-alignment: center;
+	-fx-vgap: 10;
+}
+
+.menu {
+	-fx-background-color: #8B9DC3;
+}
+
+.menu-bar {
+	-fx-background-color: #8B9DC3;
+	-fx-effect: dropshadow(gaussian, black, 10.0, 0.1, 0.0, 0.0);
+}
+
+.menu-item {
+	-fx-background-color: #8B9DC3;
+}
+
+.menu-item:hover {
+	-fx-background-color: derive(#8B9DC3, -20.0%);
+}
+.menu .label { 
+  -fx-font-size: 12.0px;
+  -fx-text-fill: white;
+  -fx-border-width: 0.0px;
+}
+
+.menu:hover { 
+  -fx-background-color: derive(#8B9DC3, -20.0%);
+}
+
+.context-menu {
+	-fx-background-color: #8B9DC3;
+}
+
+
+#connectView {
+	-fx-spacing: 20.0;
+	-fx-alignment: center;
+}
+
+#connectView .text-field {
+  -fx-font-size: 16.0px;
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: black;
+  -fx-background-radius: 30.0px;
+	 -fx-max-width: 150.0;
+	-fx-max-height: 35.0;
+	-fx-highlight-fill: #237DEA;
+}
+
+
+#loginView {
+	-fx-vgap: 20.0;
+	-fx-alignment: center;
+}
+
+#loginView .text-field{
+	 -fx-max-width: 200.0;
+	-fx-max-height: 35.0;
+}
+
+#loginView  .button{
+	-fx-min-width: 200.0;
+	-fx-min-height: 35.0;
+}
+
+#signUpView {
+	-fx-vgap: 10.0;
+	-fx-alignment: center;
+}
+
+#signUpView .text-field{
+	 -fx-max-width: 200.0;
+	-fx-max-height: 35.0;
+	
+}
+
+#signUpView .button{
+	-fx-min-width: 200.0;
+	-fx-min-height: 35.0;
+}
+
+#listView {
+	-fx-alignment: top-center;
+}
+
+#listView .button {
+	-fx-min-width: 270;
+	-fx-min-height: 35.0;
+	-fx-font-size: 16.0px;
+	 -fx-background-radius: 0.0px;
+	 -fx-border-color: white;
+	 -fx-border-width: 0 0 0.5 0;
+}
+
+#listView > .button:hover {
+	-fx-background-color: derive(#237DEA, -20.0%);
+	-fx-effect: none;
+}
+
+#listView > .list-view {
+	-fx-background-color: white;
+}
+
+.list-cell {
+	-fx-background-color: transparent;
+	-fx-border-width: 0 0 0.8 0;
+	-fx-border-color: black;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+}
+
+.list-cell:hover {
+	-fx-background-color: rgba(0,0,0,0.20);
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: rgba(0,0,0,0.40);
+}
+
+#chatroomListCell {
+	-fx-border-width: null;
+	-fx-border-color: null;
+	
+}
+
+#chatroomView > .list-view {
+	-fx-background-color: white;
+}
+
+#chatroomView > .list-view {
+	-fx-border-width: null;
+	-fx-border-color: null;
+}
+
+#chatroomView > .list-view .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: null;
+}
+
+#chatroomView > .list-view .list-cell:hover {
+	 -fx-background-color: null;
+}
+
+#messageUser {
+	-fx-background-color: #237DEA;
+	-fx-background-radius: 16px;
+	-fx-text-fill: white;
+	-fx-font-weight: normal;
+	-fx-text-alignment: left;
+	-fx-padding: 6;
+	-fx-font-size: 15.0px;
+}
+
+#messageOtherUser {
+	-fx-background-color: #002A76;
+	-fx-background-radius: 16px;
+	-fx-text-fill: white;
+	-fx-font-weight: normal;
+	-fx-text-alignment: left;
+	-fx-padding: 6;
+	-fx-font-size: 15.0px;
+}
+
+#chatroomView > #userList {
+	-fx-background-color: #d9d9d9;
+}
+
+#chatroomView > #userList .list-cell {
+	-fx-border-color: black;
+	-fx-text-fill: black;
+	-fx-border-width: 0 0 0.5 0;
+}
+
+#chatroomView > #userList .list-cell:filled:selected:focused, .list-cell:filled:selected {
+   -fx-background-color: rgba(0,0,0,0.20);
+}
+
+#chatroomView > #userList .list-cell:hover {
+	 -fx-background-color: rgba(0,0,0,0.40);
+}
+
+#sendView {
+	-fx-alignment: center;
+	-fx-spacing: 10;
+}
+
+#sendView .button {
+  -fx-font-size: 14.0px;
+ -fx-min-width: 90;
+	-fx-min-height: 35.0;
+}
+
+#sendView .button:hover {
+	-fx-effect: null;
+	-fx-background-color: derive(#237DEA, -25%);
+}
+
+#sendView .text-field {
+  -fx-font-size: 14.0px;
+	 -fx-max-width: 250.0;
+	-fx-max-height: 35.0;
+}
+
+#sendView .text-field:focused {
+	-fx-border-color: transparent;
+	-fx-border-width: 0.0;
+	-fx-border-radius: 0px;
+}
